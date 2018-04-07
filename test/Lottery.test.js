@@ -47,4 +47,13 @@ describe('Lottery', () => {
             assert(err);
         }
     });
+
+    it('only managers can call pickWinner', async () => {
+        try {
+            await lottery.methods.pickWinner().send({ from: accounts[1], value: '200' });
+            assert(false);
+        } catch (err) {
+            assert(err);
+        }
+    });
 });
