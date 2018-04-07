@@ -3,7 +3,7 @@ const Web3 = require('web3');
 const { interface, bytecode } = require('./compile');
 
 const provider = new HDWalletProvider(
-    'mnemonic',
+    'vague popular fox able uncover exhibit photo whisper unknown check nation hero',
     'https://rinkeby.infura.io/54zYEwz6CHuXCNuXGgxw'
 );
 const web3 = new Web3(provider);
